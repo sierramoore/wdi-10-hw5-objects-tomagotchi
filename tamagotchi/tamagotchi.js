@@ -11,7 +11,11 @@ let tamagotchi1 = {
     },
     puke(){
         console.log("Bleeeh :0~~")
+    },
+    yawn(){
+        console.log("Yaaaawwwn")
     }
 }
 tamagotchi1.cry();
 tamagotchi1.puke();
+tamagotchi1.yawn();
