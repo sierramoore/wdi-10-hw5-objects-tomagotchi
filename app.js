@@ -1,4 +1,4 @@
-console.log("homework due mon");
+
 
 //*************CLICKER******************************
 // // make obj called clicker
@@ -99,24 +99,27 @@ console.log("homework due mon");
 
 //*****************CALCULATOR*************************
 
-let calculator = {
-    output: 0,
-    multiply(num1, num2) {
-        this.output = num1 * num2;
-    },
-    divide(num1, num2) {
-        this.output = num1 / num2;
-    },
-    addition(num1, num2){
-        this.output = num1 + num2;
-    },
-    subtract(num1, num2){
-        this.output = num1 - num2;
-    }
-};
-calculator.multiply(-10,2);
-console.log(calculator.output);
-calculator.divide(-2,8);
+// let calculator = {
+//     output: 0,
+//     // change output each time you call a math function
+//     multiply(num1, num2) {
+//         this.output = num1 * num2;
+//     },
+//     divide(num1, num2) {
+//         this.output = num1 / num2;
+//     },
+//     addition(num1, num2){
+//         this.output = num1 + num2;
+//     },
+//     subtract(num1, num2){
+//         this.output = num1 - num2;
+//     }
+// };
+// calculator.multiply(-10,2);
+// console.log(calculator.output);
+// calculator.divide(-2,8);
+
+
 
 
 
