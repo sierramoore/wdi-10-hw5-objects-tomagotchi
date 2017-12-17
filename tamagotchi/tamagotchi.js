@@ -61,9 +61,19 @@ let player = {
         // add one to foodInTummy on both tamagatchis and store the value with += operator
         tamagotchi1.foodInTummy += 1;
         tamagotchi2.foodInTummy += 1;
+    },
+    medicateTamagotchi(tamagotchi){
+        tamagotchi.health += 1;
     }
 };
 player.sayName();
 player.feedTamagotchi();
+// check if foodInTummy updated for both after calling method
 console.log(tamagotchi1.foodInTummy);
 console.log(tamagotchi2.foodInTummy);
+// check tamagotchi1 health level before increasing
+console.log(tamagotchi1.health);
+// call method to increase health
+player.medicateTamagotchi(tamagotchi1);
+// check to see if health increased by 1
+console.log(tamagotchi1.health);
