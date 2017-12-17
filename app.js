@@ -80,22 +80,44 @@ console.log("homework due mon");
 
 //*****************HUNGRY TURTLES*************************
 
-let leonardo = {
-    name: "Leonardo",
-    color: "Blue",
-    weapon: "Katana",
-    pizzaEaten: false,
-    eatPizza(){
-        if(this.pizzaEaten === true){
-            console.log("Leonardo has already eaten pizza")
-            this.pizzaEaten = false;
-        }else{
-            console.log("Leonardo is eating pizza");
-            this.pizzaEaten = true;
-        }
+// let leonardo = {
+//     name: "Leonardo",
+//     color: "Blue",
+//     weapon: "Katana",
+//     pizzaEaten: false,
+//     eatPizza(){
+//         if(this.pizzaEaten === true){
+//             console.log("Leonardo has already eaten pizza")
+//             this.pizzaEaten = false;
+//         }else{
+//             console.log("Leonardo is eating pizza");
+//             this.pizzaEaten = true;
+//         }
+//     }
+// };
+// console.log(leonardo.eatPizza());
+
+//*****************CALCULATOR*************************
+
+let calculator = {
+    output: 0,
+    multiply(num1, num2) {
+        this.output = num1 * num2;
+    },
+    divide(num1, num2) {
+        this.output = num1 / num2;
+    },
+    addition(num1, num2){
+        this.output = num1 + num2;
+    },
+    subtract(num1, num2){
+        this.output = num1 - num2;
     }
 };
-console.log(leonardo.eatPizza());
+calculator.multiply(-10,2);
+console.log(calculator.output);
+calculator.divide(-2,8);
+
 
 
 
