@@ -56,6 +56,14 @@ let player = {
     name: "Jihiro",
     sayName(){
         console.log("Hi my name is: " + this.name)
+    },
+    feedTamagotchi(){
+        // add one to foodInTummy on both tamagatchis and store the value with += operator
+        tamagotchi1.foodInTummy += 1;
+        tamagotchi2.foodInTummy += 1;
     }
 };
 player.sayName();
+player.feedTamagotchi();
+console.log(tamagotchi1.foodInTummy);
+console.log(tamagotchi2.foodInTummy);
