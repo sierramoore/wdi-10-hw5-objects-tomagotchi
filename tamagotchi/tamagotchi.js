@@ -12,10 +12,14 @@ let tamagotchi1 = {
         console.log("Waaaaa!! My tummy is now " + this.foodInTummy + " full.")
     },
     puke(){
-        console.log(this.name + " Bleeeh :0~~")
+        //decrease health by one and store new value with -= operator
+        this.health -= 1;
+        console.log(this.name + " Bleeeh :0~~ My health is now " + this.health)
     },
     yawn(){
-        console.log(this.name + " Yaaaawwwn")
+        //decrease restedness by one and store new value with -= operator
+        this.restedness -=1;
+        console.log(this.name + " Yaaaawwwn. My resetness is now " + this.restedness)
     }
 }
 tamagotchi1.cry();
@@ -34,10 +38,14 @@ let tamagotchi2 = {
         console.log("Waaaaa!! My tummy is now " + this.foodInTummy + " full.")
     },
     puke(){
-        console.log(this.name + " Bleeeh :0~~")
+        //decrease health by one and store new value with -= operator
+        this.health -= 1;
+        console.log(this.name + " Bleeeh :0~~ My health is now " + this.health)
     },
     yawn(){
-        console.log(this.name + " Yaaaawwwn")
+        //decrease restedness by one and store new value with -= operator
+        this.restedness -=1;
+        console.log(this.name + " Yaaaawwwn. My resetness is now " + this.restedness)
     }
 }
 tamagotchi2.cry();
