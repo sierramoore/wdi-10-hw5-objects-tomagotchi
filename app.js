@@ -66,20 +66,36 @@ console.log("homework due mon");
 
 //*****************ATM*************************
 
-let atm ={
-    totalCash: 200,
-    dispenseTwenties(num){
-        if(this.totalCash >= num * 20){
-            return this.totalCash - num * 20;
-        } else{
-            return null;
+// let atm ={
+//     totalCash: 200,
+//     dispenseTwenties(num){
+//         if(this.totalCash >= num * 20){
+//             return this.totalCash - num * 20;
+//         } else{
+//             return null;
+//         }
+//     }
+// };
+// atm.dispenseTwenties(6);
+
+//*****************HUNGRY TURTLES*************************
+
+let leonardo = {
+    name: "Leonardo",
+    color: "Blue",
+    weapon: "Katana",
+    pizzaEaten: false,
+    eatPizza(){
+        if(this.pizzaEaten === true){
+            console.log("Leonardo has already eaten pizza")
+            this.pizzaEaten = false;
+        }else{
+            console.log("Leonardo is eating pizza");
+            this.pizzaEaten = true;
         }
     }
 };
-atm.dispenseTwenties(6);
-
-
-
+console.log(leonardo.eatPizza());
 
 
 
