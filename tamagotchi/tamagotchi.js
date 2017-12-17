@@ -21,7 +21,7 @@ let tamagotchi1 = {
         this.restedness -=1;
         console.log(this.name + " Yaaaawwwn. My resetness is now " + this.restedness)
     }
-}
+};
 tamagotchi1.cry();
 tamagotchi1.puke();
 tamagotchi1.yawn();
@@ -47,7 +47,15 @@ let tamagotchi2 = {
         this.restedness -=1;
         console.log(this.name + " Yaaaawwwn. My resetness is now " + this.restedness)
     }
-}
+};
 tamagotchi2.cry();
 tamagotchi2.puke();
 tamagotchi2.yawn();
+
+let player = {
+    name: "Jihiro",
+    sayName(){
+        console.log("Hi my name is: " + this.name)
+    }
+};
+player.sayName();
