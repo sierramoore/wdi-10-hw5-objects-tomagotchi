@@ -29,17 +29,44 @@ console.log("homework due mon");
 // console.log(myInformation.name);
 
 //*****************GREETER*************************
-let greeter = {
-    hello(name){
-        return("Why hello there, " + name)
+// let greeter = {
+//     hello(name){
+//         return("Why hello there, " + name)
+//     },
+//     goodbye(name){
+//         return("Benos noche, " + name)
+//     },
+//     whoAreYou(name){
+//         return("Oh right! " + name + " how could I forget...!")
+//     }
+// };
+// console.log(greeter.hello("Luka"));
+// console.log(greeter.goodbye("Luka"));
+// console.log(greeter.whoAreYou("Luka"));
+
+//*****************COLLECTING STRINGS*************************
+
+let stringCollector = {
+    collection: [],
+    collect(string){
+        let str = string.split("").reverse().join("");
+        this.collection.push(str);
     },
-    goodbye(name){
-        return("Benos noche, " + name)
-    },
-    whoAreYou(name){
-        return("Oh right! " + name + " how could I forget...!")
+    admireCollection(){
+        for(i=0; i < this.collection.length; i++){
+            console.log(this.collection[i])
+        }
+
     }
 };
-console.log(greeter.hello("Luka"));
-console.log(greeter.goodbye("Luka"));
-console.log(greeter.whoAreYou("Luka"));
+stringCollector.collect("one string");
+stringCollector.collect("blue string");
+stringCollector.admireCollection();
+
+
+//*****************ATM*************************
+
+// let atm ={
+//     totalCash: 0,
+//
+// };
