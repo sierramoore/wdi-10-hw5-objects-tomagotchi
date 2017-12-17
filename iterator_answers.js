@@ -5,18 +5,18 @@ console.log("homework iterators");
 //
 // const words = ["Ho", "Chi", "Minh", "City", "was", "once", "known", "as", "Prey", "Nokor"];
 //
-// words.forEach(function (element) {
-//     console.log(element.toUpperCase())
+// words.forEach(function (element) { // for each value of the array
+//     console.log(element.toUpperCase()) // log the value in all caps
 // });
 
 //*****************MAP*************************
 // map copies original array and you can select parts and modify w/o changing original
 // cant alter number of elements in array
+// map needs function and return statement
 
 const more_words = ["Joe", "Overeats", "Eggs"];
 const moreWordsAlternateCopy = more_words.map(function(element){
-    // console.log(element.toUpperCase())
-    return element[0];
+    return element[0]; // return each value of array (which is element) and element[0] means first letter of string
 });
 console.log(moreWordsAlternateCopy);
 
@@ -48,9 +48,8 @@ console.log(moreWordsAlternateCopy);
 //         sheepCount: 2900
 //     }
 // ];
-// let sum = 0;
+// let sum = 0; // variable(box to hold value each time for loop iterates)
 // for (i = 0; i < sheepShearers.length; i++) {
-//    sum += sheepShearers[i].sheepCount;
+//    sum += sheepShearers[i].sheepCount; // store that value in sum and add the next value of sheepCount to sum on next iteration
 // }
 // console.log(sum);
-
