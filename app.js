@@ -46,27 +46,63 @@ console.log("homework due mon");
 
 //*****************COLLECTING STRINGS*************************
 
-let stringCollector = {
-    collection: [],
-    collect(string){
-        let str = string.split("").reverse().join("");
-        this.collection.push(str);
-    },
-    admireCollection(){
-        for(i=0; i < this.collection.length; i++){
-            console.log(this.collection[i])
-        }
-
-    }
-};
-stringCollector.collect("one string");
-stringCollector.collect("blue string");
-stringCollector.admireCollection();
+// let stringCollector = {
+//     collection: [],
+//     collect(string){
+//         let str = string.split("").reverse().join("");
+//         this.collection.push(str);
+//     },
+//     admireCollection(){
+//         for(i=0; i < this.collection.length; i++){
+//             console.log(this.collection[i])
+//         }
+//
+//     }
+// };
+// stringCollector.collect("one string");
+// stringCollector.collect("blue string");
+// stringCollector.admireCollection();
 
 
 //*****************ATM*************************
 
-// let atm ={
-//     totalCash: 0,
-//
-// };
+let atm ={
+    totalCash: 200,
+    dispenseTwenties(num){
+        if(this.totalCash >= num * 20){
+            return this.totalCash - num * 20;
+        } else{
+            return null;
+        }
+    }
+};
+atm.dispenseTwenties(6);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
