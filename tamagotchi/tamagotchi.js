@@ -52,6 +52,7 @@ let tamagotchi1 = {
         console.log(this.name + " Yaaaawwwn. My resetness is now " + this.restedness)
     },
     start() {
+        // look to setInterval and call that function on THIS tamagotchi
         setInterval.hungerTimer(this);
         setInterval.yawnTimer(this);
         setInterval.sickTimer(this);
@@ -84,6 +85,7 @@ let tamagotchi2 = {
         console.log(this.name + " Yaaaawwwn. My resetness is now " + this.restedness)
     },
     start() {
+        // look to setInterval and call that function on THIS tamagotchi
         setInterval.hungerTimer(this);
         setInterval.yawnTimer(this);
         setInterval.sickTimer(this);
