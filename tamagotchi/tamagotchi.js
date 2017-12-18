@@ -1,5 +1,35 @@
 console.log("--tamagachi--");
 
+const setInterval = {
+
+    // tamgochi.cry needs to be inside another function bkus tamagotchi.cry is a method
+    // and serInterval expects a regular function when u give it a method it will still call it as a regular function and will loose the object info.
+    // function after setInterval is like a proxy frunction will call tomagotchi cry
+    //same as -----
+    // hungerTimer(tamagotchi){
+    //     let proxyFunction = function(){
+    //         tamagotchi.cry()
+    //     }
+    //     window.setInterval(proxyFunction, 6000)
+    // } --------
+    // make tamagotchi cry every 6 sec
+    hungerTimer(tamagotchi){
+        window.setInterval(function(){tamagotchi.cry()}, 6000)
+    },
+    // make tamagotchi yawn every 10 sec
+    yawnTimer(tamagotchi){
+        window.setInterval(function(){tamagotchi.yawn()}, 10000)
+    },
+    // make tamagotchi puke every 25 sec
+    sickTimer(tamagotchi){
+        window.setInterval(function(){tamagotchi.puke()}, 25000)
+    }
+};
+// setInterval.hungerTimer(tamagotchi1);
+// setInterval.yawnTimer(tamagotchi1);
+// setInterval.sickTimer(tamagotchi1);
+
+
 let tamagotchi1 = {
     name: "Starry",
     creatureType: "Dragon",
@@ -20,8 +50,14 @@ let tamagotchi1 = {
         //decrease restedness by one and store new value with -= operator
         this.restedness -=1;
         console.log(this.name + " Yaaaawwwn. My resetness is now " + this.restedness)
+    },
+    start() {
+        setInterval.hungerTimer(this);
+        setInterval.yawnTimer(this);
+        setInterval.sickTimer(this);
     }
 };
+tamagotchi1.start();
 // tamagotchi1.cry();
 // tamagotchi1.puke();
 // tamagotchi1.yawn();
@@ -47,7 +83,13 @@ let tamagotchi2 = {
         this.restedness -=1;
         console.log(this.name + " Yaaaawwwn. My resetness is now " + this.restedness)
     },
+    start() {
+        setInterval.hungerTimer(this);
+        setInterval.yawnTimer(this);
+        setInterval.sickTimer(this);
+    }
 };
+tamagotchi2.start();
 // tamagotchi2.cry();
 // tamagotchi2.puke();
 // tamagotchi2.yawn();
@@ -93,34 +135,6 @@ let player = {
 //globally set timer for tamagotchis to decrease their health, foodInTummy, and restfullness
 // added name to console log when both tamagatchis cry to test
 
-const setInterval = {
-
-    // tamgochi.cry needs to be inside another function bkus tamagotchi.cry is a method
-    // and serInterval expects a regular function when u give it a method it will still call it as a regular function and will loose the object info.
-    // function after setInterval is like a proxy frunction will call tomagotchi cry
-    //same as -----
-    // hungerTimer(tamagotchi){
-    //     let proxyFunction = function(){
-    //         tamagotchi.cry()
-    //     }
-    //     window.setInterval(proxyFunction, 6000)
-    // } --------
-    // make tamagotchi cry every 6 sec
-    hungerTimer(tamagotchi){
-        window.setInterval(function(){tamagotchi.cry()}, 6000)
-    },
-    // make tamagotchi yawn every 10 sec
-    yawnTimer(tamagotchi){
-        window.setInterval(function(){tamagotchi.yawn()}, 10000)
-    },
-    // make tamagotchi puke every 25 sec
-    sickTimer(tamagotchi){
-        window.setInterval(function(){tamagotchi.puke()}, 25000)
-    }
-};
-setInterval.hungerTimer(tamagotchi1);
-setInterval.yawnTimer(tamagotchi1);
-setInterval.sickTimer(tamagotchi1);
 
 
 
